@@ -25,5 +25,5 @@ Mediante un **Form**, los ususarios podran dejar su direccion de correo electron
 ### 7 CARRITO DE COMPRAS:
 
 ### 8 PIE DE PAGINA:
-##PRIMERAMA
-En esta nueva rama se iran incorporando los cambios de estilos que personalizaran la pagina. Cada vez que una seccion quede **personalizada** se hara un merge de la rama con la main
+## PRIMERAMA
+En esta nueva rama se iran incorporando los cambios de estilos que personalizaran la pagina. Cada vez que una seccion quede **personalizada** se hara un merge de la rama con la main y se abrira una nueva rama para **personalizar** la siguiente seccion de la pagina web.
