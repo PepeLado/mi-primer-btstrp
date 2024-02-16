@@ -2,219 +2,164 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Metadatos-->
     <meta charset="utf-8">
+    <meta name="author" content="PepeLado">
+    <meta name="description" content="Mi Primer Bootstrap en GitHub">
+    <meta name="keywords" content="HTML, CSS, JavaSript, Bootstrap, VUE, Json, MySQL, Python">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Título y Favicon-->
     <title>VVG Galería de Arte</title>
-    <script src="css/style.css"></script>
+    <link rel="icon" type="image/x-icon" href="images/icono.png">
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts-->
 </head>
 
 <body>
-    <section class="header">
-        <h1 id="#inicio">VVG Galería de Arte</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <!--SECCION BARRA DE NAVEGACION-->
+
+    <section class="menubar">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#arte">Arte</a>
-                            <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button-->
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                                    <div class="modal-content">
-                                        <!--div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div-->
-                                        <div class="modal-body">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-                                                necessitatibus a quia et. Et dolor exercitationem vel dolorum a. Nulla
-                                                nisi odio temporibus quaerat doloribus ullam aspernatur molestiae
-                                                voluptas incidunt....</p>
-                                            <div class="row">
-                                                <div>PINTURA
-                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Cubismo</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Abstracta</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Impresionismo</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Hiperrealismo</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Arte Pop</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Surrealismo</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Arte urbano</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>ESCULTURA
-                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Metal</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Madera</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Cerámica</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Vidrio</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Otros</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div>FOTOGRAFIA
-                                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Color</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Blanco y Negro</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Retrato</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Naturaleza</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div-->
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#artistas" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Artistas</a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pintura</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Jóvenes talentos</a></li>
-                                <li><a class="dropdown-item" href="#">En catálogo</a></li>
-                                <li><a class="dropdown-item" href="#">Mencionados y Premiados</a></li>
-                                <li><a class="dropdown-item" href="#">Otors artistas recomendados</a></li>
+                                <span class="navbar-text text-black">Cualquier texto que indique algo de lo que se ofrece</span>
+                                <li><a class="dropdown-item" href="#">Cubismo</a></li>
+                                <li><a class="dropdown-item" href="#">Abstracto</a></li>
+                                <li><a class="dropdown-item" href="#">Moderno</a></li>
+                                <li><a class="dropdown-item" href="#">Impresionismo</a></li>
+                                <li><a class="dropdown-item" href="#">Hiperrealismo</a></li>
+                                <li><a class="dropdown-item" href="#">Arte Pop</a></li>
+                                <li><a class="dropdown-item" href="#">Surrealismo</a></li>
+                                <li><a class="dropdown-item" href="#">Arte Urbano</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Otras Artes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Escultura</a></li>
+                                <li><a class="dropdown-item" href="#">Fotografía</a></li>
+                                <li><a class="dropdown-item" href="#">Vidrio y cerámica</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#quienessomos">Quienes somos</a>
-                        </li>
+                            <a class="nav-link" href="#">Quienes somos</a>
+                        </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="...">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>   
+                    </ul>               
+                    <form class="d-flex align-items-end">  <!--Este formulario debe quedar dentro de la división collapsible del navbar a la derecha de la pantalla"-->
+                        <input class="form-control me-2" type="text" placeholder="......">
+                        <button class="btn btn-primary" type="button">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </section>
 
-    <section class="home">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <!-- SECCION INICIO -->
+
+    <section class="inicio">
+        <h1>Galeria de Arte Vincent</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/jpgdemuestra.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/jpgdemuestra.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="inicio-imagen" src="assets/01.svg" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>1st slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/jpgdemuestra.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <div class="container">
+                        <img class="inicio-imagen" src="assets/02.svg" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>2nd slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="inicio-imagen" src="assets/03.svg" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>3rd slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
 
+    <!-- SECCION ARTE -->
+
     <section class="arte">
         <h1 id="arte">ARTE</h1>
     </section>
+
+    <!-- SECCION ARTISTAS -->
 
     <section class="artistas">
         <h1 id="artistas">ARTISTAS</h1>
     </section>
 
+    <!-- SECCION QUIENES SOMOS -->
+
     <section class="quienessomos">
         <h1 id="quienessomos">QUIENES SOMOS</h1>
     </section>
+
+    <!-- SECCION CONTACTO -->
 
     <section class="contacto">
         <h1 id="contacto">CONTACTO</h1>
     </section>
 
-    <section class="footer">
+    <!-- SECCION PIE DE PAGINA -->
 
+    <section class="footer">
+        <img src="assets/ST.png" alt="">
     </section>
 
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+      crossorigin="anonymous">
+    </script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
