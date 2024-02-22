@@ -10,11 +10,11 @@
     <meta charset="utf-8">
     <meta name="author" content="PepeLado">
     <meta name="description" content="Mi Primer Bootstrap en GitHub">
-    <meta name="keywords" content="HTML, CSS, JavaSript, Bootstrap, VUE, Json, MySQL, Python">
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Título y Favicon-->
     <title>VVG Galería de Arte</title>
-    <link rel="icon" type="image/x-icon" href="images/icono.png">
+    <link rel="icon" type="image/x-icon" href="assets/01.svg">
     <!--Estilos personalizados-->
     <link rel="stylesheet" href="css/style.css">
     <!--Google Fonts-->
@@ -126,14 +126,331 @@
 
     <!-- SECCION ARTE -->
 
-    <section class="arte">
-        <h1 id="arte">ARTE</h1>
+    <section id="pinturas" class="galeria-pinturas d-flex flex-column">
+      <h2>Pinturas</h2>
+      <h4>Estas son algunos de las obras en nuestra galería...</h4>
+      <div class="container text-center pinturas-contenedor">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/01.svg" alt="Obrablabla">
+              <div class="overlay">
+                <h3>Obra 1</h3>
+                <p>Oleo sobre tela</p>
+                <p>100 x 120 cms</p>
+                <p>Susie Claretta</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modaluno">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 1 -->
+          <div class="modal fade" id="Modaluno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Título</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/01.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt quo? Culpa est deserunt magni fugit inventore, unde dolorem voluptas?</p>
+                  <p>Ar$ 1.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/02.svg" alt="Obra 2">
+              <div class="overlay">
+                <h3>Obra 2</h3>
+                <p>Acuarela</p>
+                <p>35 x 40 cms</p>
+                <p>Pepe Pincelada</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modaldos">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 2 -->
+          <div class="modal fade" id="Modaldos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Otro título</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/02.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Quas nesciunt quo? Culpa est deserunt magni fugit inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  <p>Ar$ 2.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/03.svg" alt="Obra 3">
+              <div class="overlay">
+                <h3>Titulo 3</h3>
+                <p>Oleo sobre madera</p>
+                <p>70 x 125 cms</p>
+                <p>Marina Decolores</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modaltres">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 3-->
+          <div class="modal fade" id="Modaltres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Un nombre lindo</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/03.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt quo? Culpa est deserunt magni fugit inventore, unde dolorem voluptas?</p>
+                  <p>Ar$ 3.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/02.svg" alt="Obra 4">
+              <div class="overlay">
+                <h3>Pintura 4</h3>
+                <p>Lápiz y crayons</p>
+                <p>27 x 32 cms</p>
+                <p>Fernando Szaccapunta</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modalquatro">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 4 -->
+          <div class="modal fade" id="Modalquatro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Título</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/02.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt quo? Culpa est deserunt magni fugit inventore, unde dolorem voluptas?</p>
+                  <p>Ar$ 4.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/03.svg" alt="Obra 5">
+              <div class="overlay">
+                <h3>Pintura 5</h3>
+                <p>Técnica mixta sobre cartón</p>
+                <p>88 x 90 cms</p>
+                <p>Gerardo Alhambra</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modalcinco">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 5 -->
+          <div class="modal fade" id="Modalcinco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Título</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/03.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt quo? Culpa est deserunt magni fugit inventore, unde dolorem voluptas?</p>
+                  <p>Ar$ 5.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="pintura">
+              <img src="assets/01.svg" alt="Obra 6">
+              <div class="overlay">
+                <h3>La sexta</h3>
+                <p>Acrílico sobre cartón</p>
+                <p>100 x 120 cms</p>
+                <p>Susie Claretta</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Modalseis">
+                    Ver
+                    <i class="bi bi-arrow-right-square-fill"></i>
+                </button>                   
+              </div>
+            </div>
+          </div>
+          <!-- Modal 6 -->
+          <div class="modal fade" id="Modalseis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Título de la sexta</h1>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <img class="imagen-modal img-fluid" src="assets/01.svg" alt="Obrablabla">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Consectetur adipisicing elit. Quas nesciunt, Lorem ipsum dolor sit amet, quo? Culpa est deserunt magni fugit inventore, unde dolorem voluptas?</p>
+                  <p>Ar$ 6.500.000</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver otras obras
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button> 
+      </a>
     </section>
 
     <!-- SECCION ARTISTAS -->
 
     <section class="artistas">
-        <h1 id="artistas">ARTISTAS</h1>
+      <h1 id="artistas">ARTISTAS</h1>
+      <!--section-->
+        <article class="container bd-example-snippet bd-code-snippet"><section class="bd-example">
+          <div class="container accordion" id="accordionExample">
+            <div class="accordion-item mb-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                <h6>Marina DeColores</h6>
+              </button>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                <h6>Susie Claretta</h6>
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
+                <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                <h6>Pepe Pincelada</h6>
+              </button>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                  <h6>Marina Decolores</h6>
+                </button>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                <h6>Fernando Szaccapunta</h6>
+              </button>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the fifth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <img class="artistas-imagen rounded-circle me-3" src="assets/01.svg" alt="">
+                <h6>Gerardo Alhambra</h6>
+              </button>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the sixth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      <!--/section-->
     </section>
 
     <!-- SECCION QUIENES SOMOS -->
