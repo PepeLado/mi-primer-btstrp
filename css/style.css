@@ -41,12 +41,11 @@ section {
 /* SECCION ARTE */
         
 .galeria-pinturas {
-    padding: 20px;
+    padding: 20px; 
 } 
 .galeria-pinturas img {
     height: 100%;
     width: 100%;
-    padding: 10px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease;
@@ -97,12 +96,42 @@ section {
 
 /* SECCION QUIENES SOMOS */
 
+.quienessomos {
+    padding: 20px;
+} 
+.quienessomos img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+.card {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* SECCION CONTACTO */
 
 
 /* SECCION PIE DE PAGINA */
+.pie-de-pagina a p {
+    color: white;
+}
+.pie-de-pagina i {
+    color: white;
+}
 
 
 /* BREAKPOINTS */
+
+@media screen and (min-width: 769px) {
+    .listafooter1 {
+        justify-content: start;
+    }
+    .listafooter3 {
+        justify-content: end;
+    }
+}
 
